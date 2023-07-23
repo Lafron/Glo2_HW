@@ -4,7 +4,7 @@ let title = prompt("What is your project name?", "Calculator");
 
 let screens = prompt("What type of screens do you prefer?", "simple, modern, interactive");
 
-let screenPrice = +prompt("How much will this job cost?", "10000");
+let screenPrice = +prompt("How much will this job cost?", "30000");
 
 let adaptive = confirm("Do you need adaptive?");
 
