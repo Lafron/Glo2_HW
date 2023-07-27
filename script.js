@@ -66,6 +66,8 @@ const showTypeOf = function (message, arg) {
     console.log(message, typeof arg);
 };
 
+console.log("yyy");
+
 showTypeOf("type of title is:", title);
 showTypeOf("type of fullPrice is:", fullPrice);
 showTypeOf("type of adaptive is:", adaptive);
@@ -74,4 +76,4 @@ console.log(screens.split(", "));
 
 getRollbackMessage(fullPrice);
 
-console.log(Math.ceil(servicePercentPrice));
+console.log(Math.ceil(servicePerce ntPrice));
