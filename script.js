@@ -26,30 +26,33 @@ const askFunc = () => {
         screenPrice = prompt("How much will this job cost?", "30000");
         console.log("isNumber(screenPrice) " + isNumber(screenPrice));
     } while (!isNumber(screenPrice));
-    
-    screenPrice = parseFloat(screenPrice);
 
+    console.log(screenPrice);
+    screenPrice = parseFloat(screenPrice.trim());
+    console.log(screenPrice);
     
 
     adaptive = confirm("Do you need adaptive?");
 
-    let serv;
-    let servicePr;
+    let service;
+    let price;
 
     for (let i = 0; i < 2; i++){
-       serv = prompt("What additional type of service is needed?", "long");
+       service = prompt("What additional type of service is needed?", "long");
 
         do {
-            servicePr = prompt("How cost is it?", "1000");
+            price = prompt("How cost is it?", "1000");
         }
-        while (!isNumber(servicePr));
+        while (!isNumber(price));
+        console.log(price);
 
         if (i == 0) {
-            service1 = serv;
-            servicePrice1 = parseFloat(servicePr);
+            service1 = service;
+            servicePrice1 = parseFloat(price.trim());
+            console.log(servicePrice1);
         } else {
-             service2 = serv;
-            servicePrice2 = parseFloat(servicePr);
+            service2 = service;
+            servicePrice2 = parseFloat(price.trim());
         };
     };
 };
